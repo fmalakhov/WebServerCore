@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>http://192.168.1.14:8000/Contacts.html</loc>
+    <lastmod>2017-02-26T10:05:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>http://192.168.1.14:8000/UsedRefferences.html</loc>
+    <lastmod>2017-02-26T10:05:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.50</priority>
+  </url>
+  <url>
+    <loc>http://192.168.1.14:8000/Main.html</loc>
+    <lastmod>2017-02-26T10:05:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>http://192.168.1.14:8000/Main.html?menu_ref=0</loc>
+    <lastmod>2017-02-26T10:05:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>http://192.168.1.14:8000/AboutServer.html</loc>
+    <lastmod>2017-02-26T10:20:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.70</priority>
+  </url>
+</urlset>

@@ -1,0 +1,242 @@
+###############################################################################
+#Copyright (c) 2012-2017 MFBS, Fedor Malakhov
+#
+#Permission is hereby granted, free of charge, to any person obtaining a copy
+#of this software and associated documentation files (the "Software"), to deal
+#in the Software without restriction, including without limitation the rights
+#to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+#copies of the Software, and to permit persons to whom the Software is
+#furnished to do so, subject to the following conditions:
+#
+#The above copyright notice and this permission notice shall be included in all
+#copies or substantial portions of the Software.
+#
+#THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+#IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+#FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+#AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+#LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+#OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+#SOFTWARE.
+###############################################################################
+
+TD {
+	FONT-SIZE: 11px; FONT-FAMILY: Arial, Helvetica, Trebuchet MS, Verdana, sans-serif; COLOR: #000000
+}
+TR {
+	FONT-SIZE: 11px; FONT-FAMILY: Arial, Helvetica, Trebuchet MS, Verdana, sans-serif; COLOR: #ffffff
+}
+
+TABLE.moduletable {
+	PADDING-BOTTOM: 7px; TEXT-ALIGN: left; PADDING-TOP: 1px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; WIDTH: 100%
+}
+TABLE.moduletable TH {
+	FONT-SIZE: 13px; BORDER-TOP: #354147 3px solid; BORDER-BOTTOM: #1c32f9 2px solid; FONT-WEIGHT: bold; COLOR: #ffffff; PADDING-BOTTOM: 2px; TEXT-ALIGN: left; PADDING-TOP: 2px; PADDING-LEFT: 10px; LETTER-SPACING: 2px; PADDING-RIGHT: 2px; BACKGROUND-COLOR: #000000
+}
+
+TABLE.searchintro {
+	BORDER-TOP: #ff8000 1px solid; BORDER-RIGHT: #ff8000 1px solid; BORDER-BOTTOM: #ff8000 1px solid; BORDER-LEFT: #ff8000 1px solid; BACKGROUND-COLOR: #ffffff
+}
+
+DIV {
+font-size: 11px;
+font-family: Arial, Helvetica, Trebuchet MS, Verdana, sans-serif;
+color: #ffffff;
+}
+
+body {
+background-color: $SETWORKZONEBGCOLOR;;
+background-image: url($SETIMGBGSITEGROUND;);
+}
+
+.status_show_main_block {
+background: #DFDFDF;
+width: 1860px;
+height: 1020px;
+padding: 0px;
+margin-bottom: 6px;
+position: fixed;
+padding-left: 5px;
+padding-top: 5px;
+left: 20px;
+top: 20px;
+border-color: #CFCFCF;
+border-width: 2px;
+border-style: solid;
+border-radius: 10px;
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+-khtml-border-radius: 10px;
+}
+
+.system_version_info {
+position: fixed;
+width: 600px;
+height: 25px;
+left: 630px;
+top: 1020px;
+font-family: Trebuchet MS, Verdana, sans-serif;
+font-size: 16px;
+font-weight: bold;
+text-align: center;
+color: #9E9E9E;
+}
+
+.company_logo_info_block {
+position: fixed;
+width: 700px;
+height: 70px;
+left: 20px;
+top: 40px;
+}
+
+.company_logo_pic_block{
+position: relative;
+width: 60px;
+height: 60px;
+background-image: url($SETIMGPRODUCTLOGO;);
+background-size: contain;
+background-repeat: no-repeat;
+position: relative;
+left: 140px;
+top:  5px;
+}
+
+.company_logo_name_block {
+position: relative;
+width: 450px;
+height: 60px;
+font-family: Trebuchet MS, Verdana, sans-serif;
+font-size: 30px;
+fomt-style: italic;
+font-weight: bold;
+text-align: left;
+color: #0064BD;
+left: 210px;
+top:  -45px;
+}
+		
+.date_time_lang_sel_box, .user_exit_container {
+background: $SETGRPCONTBGCOLOR;;
+border-style: solid;
+border-color: $SETGRPBORDERBGCOLOR;;
+border-width: 2px;
+position: fixed;
+width: 170px;
+border-bottom-right-radius: 5px;
+border-bottom-left-radius: 5px;
+padding-left: 5px;
+padding-top: 5px;
+padding-bottom: 0px;	
+box-shadow: 1px 1px 5px black;
+}
+
+.date_time_lang_sel_box {
+height: 60px;
+left: 1675px;
+top: 50px;
+color: #404040;
+}
+
+.user_exit_container {
+left: 1675px;
+height: 40px;
+top: 130px;
+}
+
+.user_exit_name {
+position: relative;
+font-size: 12px;
+font-weight: bold;
+font-family: Trebuchet MS, Verdana, sans-serif;
+color: black;
+width: 120px;
+height: 24px;
+left: 5px;
+top: 5px;
+}
+
+.user_exit_bt_box {
+position: relative;
+width: 50px;
+height: 24px;
+left: 115px;
+top: -19px;
+}
+
+.ServDateInfZone {
+position: relative;
+font-size: 16px;
+font-weight: bold;
+color: black;
+width: 150px;
+height: 24px;
+left: 6px;
+top: 5px;
+}
+
+.header_show_site_name {
+position: relative;
+left: 40px;
+top: -112px;
+font-family: Trebuchet MS, Verdana, sans-serif;
+font-size: 32px;
+font-weight: bold;
+text-align: center;
+text-decoration: none;
+color: #4645EB;	
+}
+
+.header_show_site_descr {
+position: relative;
+left: 40px;
+top: -110px;
+font-family: Trebuchet MS, Verdana, sans-serif;
+font-size: 24px;
+font-weight: bold;
+text-align: center;
+text-decoration: none;
+color: #4645EB;	
+}
+
+.sel_language_block {	
+width: 56px;
+height: 20px;
+padding: 5px;
+margin-top: 5px;
+position: relative;
+left: 45px;
+top: 0px;
+}
+
+.show_rus_flag_image {
+position: relative;
+width: 27px;
+height: 18px;
+background-size: contain;
+background-repeat: no-repeat;
+left: 32px;
+top: -14px;
+opacity: 1.0;
+background: $SETGRPCONTBGCOLOR;;
+background-image: url(../images/rus_flag.gif);
+}
+
+.show_eng_flag_image {
+position: relative;
+width: 27px;
+height: 14px;
+background-size: contain;
+background-repeat: no-repeat;
+left: 0px;
+top: 0px;
+opacity: 1.0;
+background: $SETGRPCONTBGCOLOR;;
+background-image: url(../images/usa_flag.gif);
+}
+
+.dyn_sys_inf_cont {
+position: relative;
+left: 0px;
+top: 0px;
+}

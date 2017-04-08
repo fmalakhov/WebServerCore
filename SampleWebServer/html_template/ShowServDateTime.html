@@ -1,0 +1,84 @@
+###############################################################################
+#Copyright (c) 2012-2017 MFBS, Fedor Malakhov
+#
+#Permission is hereby granted, free of charge, to any person obtaining a copy
+#of this software and associated documentation files (the "Software"), to deal
+#in the Software without restriction, including without limitation the rights
+#to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+#copies of the Software, and to permit persons to whom the Software is
+#furnished to do so, subject to the following conditions:
+#
+#The above copyright notice and this permission notice shall be included in all
+#copies or substantial portions of the Software.
+#
+#THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+#IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+#FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+#AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+#LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+#OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+#SOFTWARE.
+###############################################################################
+<script type="text/javascript">
+var SessionId = "$SETSESSIONKEY;";
+var time = $SETUSERSESSTIMEOUT;;
+var start_session_timeout = time;
+var SessTmrId;
+var ServDataTimeTmrId;
+	
+function ServDateTimeShow()
+{
+    $.ajax({
+	url: "ServDateTimeReq.htr",
+	type: "GET",
+	timeout: 5000,
+	data: {"session_id": SessionId},
+	cache: false,
+        success: function(html){  
+            $("#serv_date_inf_zone_div").html(html);
+			time = $SETUSERSESSTIMEOUT;;
+            },
+        error: function(XHR){		
+		    clearInterval(ServDataTimeTmrId);
+			document.getElementById('serv_date_inf_zone_div').innerHTML = '';
+	    }			
+    });
+};
+
+function getTimeout() 
+{
+    time -= 1000;
+    var seconds = (Math.floor(time / 1000)) % 60;
+    var minutes = Math.floor(time / (1000 * 60));
+    if (time <= 0)
+	{
+        clearInterval(SessTmrId);
+		clearInterval(ServLinkStateTmrId);
+		clearInterval(NumActiveUsersTmrId);
+		clearInterval(SysStatusTmrId);
+		if (typeof(LastAlmListTmrId) != 'undefined') {clearInterval(LastAlmListTmrId);}
+        alert("$SETBASETEXTBYID(60);");
+        location.href = "Main.html$SETSINGSESSIONID;";
+    }
+    if (seconds < 10)
+	{
+        seconds = "0" + seconds;
+    }
+}
+
+$(document).ready(function()
+{  
+    ServDateTimeShow();
+    SessTmrId = setInterval("getTimeout();", 1000);	
+    ServDataTimeTmrId = setInterval('ServDateTimeShow()', 1000);
+});
+
+function ShowServDateTimeStart()
+{
+    time = start_session_timeout;
+	ServDateTimeShow();
+	SessTmrId = setInterval("getTimeout();", 1000);
+	ServDataTimeTmrId = setInterval('ServDateTimeShow()', 1000);
+}
+
+</script>

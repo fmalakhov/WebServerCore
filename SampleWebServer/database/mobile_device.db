@@ -1,0 +1,60 @@
+###############################################################################
+#Copyright (c) 2012-2017 MFBS, Fedor Malakhov
+#
+#Permission is hereby granted, free of charge, to any person obtaining a copy
+#of this software and associated documentation files (the "Software"), to deal
+#in the Software without restriction, including without limitation the rights
+#to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+#copies of the Software, and to permit persons to whom the Software is
+#furnished to do so, subject to the following conditions:
+#
+#The above copyright notice and this permission notice shall be included in all
+#copies or substantial portions of the Software.
+#
+#THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+#IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+#FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+#AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+#LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+#OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+#SOFTWARE.
+###############################################################################
+DbMobDevCreate(DeviceId="1"  DeviceDetect="HTC_Desire_X"          DeviceName="HTC Desire X"           DeviceScrWidth="480" DeviceScrHeight="800"  DeviceAspWidth="320" DeviceAspHeight="533" DeviceType="PHONE")
+DbMobDevCreate(DeviceId="2"  DeviceDetect="HTC One V"             DeviceName="HTC One V"              DeviceScrWidth="480" DeviceScrHeight="800"  DeviceAspWidth="320" DeviceAspHeight="533" DeviceType="PHONE")
+DbMobDevCreate(DeviceId="3"  DeviceDetect="HTC_One_X"             DeviceName="HTC One X"              DeviceScrWidth="720" DeviceScrHeight="1280" DeviceAspWidth="360" DeviceAspHeight="640" DeviceType="PHONE")
+DbMobDevCreate(DeviceId="4"  DeviceDetect="HTC PH39100"           DeviceName="HTC Vivid"              DeviceScrWidth="540" DeviceScrHeight="960"  DeviceAspWidth="360" DeviceAspHeight="640" DeviceType="PHONE")
+DbMobDevCreate(DeviceId="5"  DeviceDetect="HTC Wildfire S A510e"  DeviceName="HTC Wildfire S A510e"   DeviceScrWidth="320" DeviceScrHeight="426"  DeviceAspWidth="320" DeviceAspHeight="426" DeviceType="PHONE")
+DbMobDevCreate(DeviceId="6"  DeviceDetect="GT-N7000"              DeviceName="Samsung Galaxy Note"    DeviceScrWidth="800" DeviceScrHeight="1280" DeviceAspWidth="400" DeviceAspHeight="640" DeviceType="PHONE")
+DbMobDevCreate(DeviceId="7"  DeviceDetect="SM-T211"               DeviceName="Samsung Galaxy Tab3"    DeviceScrWidth="600" DeviceScrHeight="1024" DeviceAspWidth="400" DeviceAspHeight="682" DeviceType="PAD")
+DbMobDevCreate(DeviceId="8"  DeviceDetect="Galaxy Nexus"          DeviceName="Samsung Galaxy Nexus"   DeviceScrWidth="720" DeviceScrHeight="1184" DeviceAspWidth="360" DeviceAspHeight="592" DeviceType="PHONE")
+DbMobDevCreate(DeviceId="9"  DeviceDetect="SCH-I535"              DeviceName="Samsung Galaxy S III"   DeviceScrWidth="720" DeviceScrHeight="1280" DeviceAspWidth="360" DeviceAspHeight="640" DeviceType="PHONE")
+DbMobDevCreate(DeviceId="10" DeviceDetect="GT-I9300"              DeviceName="Samsung Galaxy S III"   DeviceScrWidth="720" DeviceScrHeight="1280" DeviceAspWidth="360" DeviceAspHeight="640" DeviceType="PHONE")
+DbMobDevCreate(DeviceId="11" DeviceDetect="SAMSUNG GT-I9190"      DeviceName="Samsung Galaxy S4 mini" DeviceScrWidth="540" DeviceScrHeight="960"  DeviceAspWidth="360" DeviceAspHeight="640" DeviceType="PHONE")
+DbMobDevCreate(DeviceId="12" DeviceDetect="GT-N7105"              DeviceName="Samsung Galaxy Note II" DeviceScrWidth="720" DeviceScrHeight="1280" DeviceAspWidth="360" DeviceAspHeight="640" DeviceType="PHONE")
+DbMobDevCreate(DeviceId="13" DeviceDetect="SAMSUNG-SGH-I897"      DeviceName="Samsung Captivate"      DeviceScrWidth="480" DeviceScrHeight="800"  DeviceAspWidth="320" DeviceAspHeight="533" DeviceType="PHONE")
+DbMobDevCreate(DeviceId="14" DeviceDetect="iPhone OS 7_0"         DeviceName="Apple iPhone5s"         DeviceScrWidth="640" DeviceScrHeight="960"  DeviceAspWidth="320" DeviceAspHeight="640" DeviceType="PHONE")
+DbMobDevCreate(DeviceId="15" DeviceDetect="iPhone OS 6_0"         DeviceName="Apple iPhone5"          DeviceScrWidth="640" DeviceScrHeight="1136" DeviceAspWidth="320" DeviceAspHeight="568" DeviceType="PHONE")
+DbMobDevCreate(DeviceId="16" DeviceDetect="iPhone OS 4_0"         DeviceName="Apple iPhone4"          DeviceScrWidth="640" DeviceScrHeight="960"  DeviceAspWidth="320" DeviceAspHeight="640" DeviceType="PHONE")
+DbMobDevCreate(DeviceId="17" DeviceDetect="DROID RAZR"            DeviceName="Motorola Droid Razr"    DeviceScrWidth="540" DeviceScrHeight="960"  DeviceAspWidth="360" DeviceAspHeight="640" DeviceType="PHONE")
+DbMobDevCreate(DeviceId="18" DeviceDetect="MB865"                 DeviceName="Motorola ATRIX 2"       DeviceScrWidth="540" DeviceScrHeight="960"  DeviceAspWidth="360" DeviceAspHeight="640" DeviceType="PHONE")
+DbMobDevCreate(DeviceId="19" DeviceDetect="LT26i"                 DeviceName="Sony Xperia S"          DeviceScrWidth="720" DeviceScrHeight="1280" DeviceAspWidth="360" DeviceAspHeight="640" DeviceType="PHONE")
+DbMobDevCreate(DeviceId="20" DeviceDetect="Nexus 7"               DeviceName="Asus Nexus 7"           DeviceScrWidth="800" DeviceScrHeight="1205" DeviceAspWidth="600" DeviceAspHeight="903" DeviceType="PHONE")
+DbMobDevCreate(DeviceId="21" DeviceDetect="LG-GT540"              DeviceName="LG Optimus GT540"       DeviceScrWidth="320" DeviceScrHeight="480"  DeviceAspWidth="320" DeviceAspHeight="480" DeviceType="PHONE")
+DbMobDevCreate(DeviceId="22" DeviceDetect="HTC_HD2"               DeviceName="HTC HD2"                DeviceScrWidth="480" DeviceScrHeight="800"  DeviceAspWidth="320" DeviceAspHeight="533" DeviceType="PHONE")
+DbMobDevCreate(DeviceId="23" DeviceDetect="HTC Touch Diamond"     DeviceName="HTC Touch Diamond"      DeviceScrWidth="480" DeviceScrHeight="640"  DeviceAspWidth="320" DeviceAspHeight="426" DeviceType="PHONE")
+DbMobDevCreate(DeviceId="24" DeviceDetect="HUAWEI P6-U06"         DeviceName="Huawei Ascend P6-U06"   DeviceScrWidth="720" DeviceScrHeight="1280" DeviceAspWidth="360" DeviceAspHeight="640" DeviceType="PHONE")
+DbMobDevCreate(DeviceId="25" DeviceDetect="iPhone OS 7_1"         DeviceName="Apple iPhone5"          DeviceScrWidth="640" DeviceScrHeight="960"  DeviceAspWidth="320" DeviceAspHeight="640" DeviceType="PHONE")
+DbMobDevCreate(DeviceId="26" DeviceDetect="NOKIA; Lumia 720"      DeviceName="NOKIA Lumia 720"        DeviceScrWidth="480" DeviceScrHeight="800"  DeviceAspWidth="320" DeviceAspHeight="533" DeviceType="PHONE")
+DbMobDevCreate(DeviceId="27" DeviceDetect="Nexus 4"               DeviceName="LG Nexus 4 E960"        DeviceScrWidth="768" DeviceScrHeight="1280" DeviceAspWidth="360" DeviceAspHeight="640" DeviceType="PHONE")
+DbMobDevCreate(DeviceId="28" DeviceDetect="Torque"                DeviceName="Kyocera E6710"          DeviceScrWidth="480" DeviceScrHeight="800"  DeviceAspWidth="320" DeviceAspHeight="533" DeviceType="PHONE")
+DbMobDevCreate(DeviceId="29" DeviceDetect="HTC_One"               DeviceName="HTC ONE"                DeviceScrWidth="1080" DeviceScrHeight="1920" DeviceAspWidth="360" DeviceAspHeight="768" DeviceType="PHONE")
+DbMobDevCreate(DeviceId="30" DeviceDetect="VS980 4G"              DeviceName="LG G2 Verison"          DeviceScrWidth="1080" DeviceScrHeight="1920" DeviceAspWidth="360" DeviceAspHeight="768" DeviceType="PHONE")
+DbMobDevCreate(DeviceId="31" DeviceDetect="D800 4G"               DeviceName="LG G2 AT&T"             DeviceScrWidth="1080" DeviceScrHeight="1920" DeviceAspWidth="360" DeviceAspHeight="768" DeviceType="PHONE")
+DbMobDevCreate(DeviceId="32" DeviceDetect="D802 4G"               DeviceName="LG G2 Europe"           DeviceScrWidth="1080" DeviceScrHeight="1920" DeviceAspWidth="360" DeviceAspHeight="768" DeviceType="PHONE")
+DbMobDevCreate(DeviceId="33" DeviceDetect="D803 4G"               DeviceName="LG G2 Canada"           DeviceScrWidth="1080" DeviceScrHeight="1920" DeviceAspWidth="360" DeviceAspHeight="768" DeviceType="PHONE")
+DbMobDevCreate(DeviceId="34" DeviceDetect="D802TA 4G"             DeviceName="LG G2 Austrailia"       DeviceScrWidth="1080" DeviceScrHeight="1920" DeviceAspWidth="360" DeviceAspHeight="768" DeviceType="PHONE")
+DbMobDevCreate(DeviceId="35" DeviceDetect="LS980 4G"              DeviceName="LG G2 Sprint"           DeviceScrWidth="1080" DeviceScrHeight="1920" DeviceAspWidth="360" DeviceAspHeight="768" DeviceType="PHONE")
+DbMobDevCreate(DeviceId="36" DeviceDetect="S60"                   DeviceName="Nokia N8"               DeviceScrWidth="360"  DeviceScrHeight="640"  DeviceAspWidth="360" DeviceAspHeight="640" DeviceType="PHONE")
+DbMobDevCreate(DeviceId="37" DeviceDetect="XT1060"                DeviceName="Motorola MotoX"         DeviceScrWidth="1080" DeviceScrHeight="1920" DeviceAspWidth="360" DeviceAspHeight="768" DeviceType="PHONE")
+DbMobDevCreate(DeviceId="38" DeviceDetect="HTC C2"                DeviceName="HTC 516"                DeviceScrWidth="540"  DeviceScrHeight="960"  DeviceAspWidth="360" DeviceAspHeight="640" DeviceType="PHONE")
+DbMobDevCreate(DeviceId="39" DeviceDetect="SM-N910C"              DeviceName="Samsung Galaxy Note 4"  DeviceScrWidth="1440" DeviceScrHeight="2560" DeviceAspWidth="360" DeviceAspHeight="640" DeviceType="PHONE")

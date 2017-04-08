@@ -1,0 +1,52 @@
+###############################################################################
+#Copyright (c) 2012-2017 MFBS, Fedor Malakhov
+#
+#Permission is hereby granted, free of charge, to any person obtaining a copy
+#of this software and associated documentation files (the "Software"), to deal
+#in the Software without restriction, including without limitation the rights
+#to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+#copies of the Software, and to permit persons to whom the Software is
+#furnished to do so, subject to the following conditions:
+#
+#The above copyright notice and this permission notice shall be included in all
+#copies or substantial portions of the Software.
+#
+#THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+#IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+#FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+#AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+#LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+#OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+#SOFTWARE.
+###############################################################################
+<script type="text/javascript">
+var HexConv = "0123456789ABCDEF";
+function UserAuthEncode(login, passwd)
+{
+    var ai = [];
+	var er = [];
+	var rc = "";
+	var i, j, k, m, n;
+	
+	if (!login.length) return "";
+	if (!passwd.length) return "";
+	ai.push(login.length);
+	for (i=0;i < login.length;i++)
+	    ai.push(login.charCodeAt(i));
+	ai.push(passwd.length);
+	for (i=0;i < passwd.length;i++)
+	    ai.push(passwd.charCodeAt(i));
+    j = PrvEncKey[0];
+	k = 1;
+    for (i=0;i < ai.length;i++){
+	    m = PublicEncKey[j++] ^ PrvEncKey[k++];
+		n = ai[i] ^ m;
+        er.push(n);
+	    if (j == PublicEncKey.length) j=0;
+		if (k == PrvEncKey.length) k=1;
+    }
+    for (i=0;i < er.length;i++)
+        rc += HexConv[(er[i] & 0xf0) >> 4] + HexConv[er[i] & 0x0f];
+	return rc;
+}
+</script>

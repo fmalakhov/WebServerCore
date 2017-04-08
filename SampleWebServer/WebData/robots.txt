@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /lostPasswd.html*
+Disallow: /UserAuthReq.html*
+Host: host.com:8000
+Sitemap: http://host.com:8000/sitemap.xml

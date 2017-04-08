@@ -1,0 +1,45 @@
+###############################################################################
+#Copyright (c) 2012-2017 MFBS, Fedor Malakhov
+#
+#Permission is hereby granted, free of charge, to any person obtaining a copy
+#of this software and associated documentation files (the "Software"), to deal
+#in the Software without restriction, including without limitation the rights
+#to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+#copies of the Software, and to permit persons to whom the Software is
+#furnished to do so, subject to the following conditions:
+#
+#The above copyright notice and this permission notice shall be included in all
+#copies or substantial portions of the Software.
+#
+#THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+#IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+#FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+#AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+#LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+#OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+#SOFTWARE.
+###############################################################################
+DbBotInfoCreate(BotId="1"  BotName="BOT_GOOGLE1"        BotIdentKey="Googlebot"        BotIndex="1")
+DbBotInfoCreate(BotId="2"  BotName="BOT_YANDEX"         BotIdentKey="YandexBot"        BotIndex="2")
+DbBotInfoCreate(BotId="3"  BotName="BOT_MAILRU"         BotIdentKey="Mail.RU_Bot"      BotIndex="3")
+DbBotInfoCreate(BotId="4"  BotName="BOT_OPENSTAT"       BotIdentKey="openstat,ru/Bot"  BotIndex="4")
+DbBotInfoCreate(BotId="5"  BotName="BOT_WEBMONITOR"     BotIdentKey="Web-Monitoring/1.0; +http://monoid.nic.ru/" BotIndex="5")
+DbBotInfoCreate(BotId="6"  BotName="BOT_RAMBLER"        BotIdentKey="StackRambler/2.0" BotIndex="6")
+DbBotInfoCreate(BotId="7"  BotName="BOT_MSN1"           BotIdentKey="msnbot/1.1"       BotIndex="7")
+DbBotInfoCreate(BotId="8"  BotName="BOT_MSN2"           BotIdentKey="http://search.msn.com/msnbot.htm" BotIndex="7")
+DbBotInfoCreate(BotId="9"  BotName="BOT_YAHOO"          BotIdentKey="Yahoo! Slurp; http://help.yahoo.com/help/us/ysearch/slurp" BotIndex="8")
+DbBotInfoCreate(BotId="10" BotName="BOT_MJ12V1"         BotIdentKey="MJ12bot/v1.4.4; http://www.majestic12.co.uk/bot.php" BotIndex="9")
+DbBotInfoCreate(BotId="11" BotName="BOT_MJ12V2"         BotIdentKey="MJ12bot/v1.4.5; http://www.majestic12.co.uk/bot.php" BotIndex="9")
+DbBotInfoCreate(BotId="12" BotName="BOT_BING"           BotIdentKey="bingbot/2.0; +http://www.bing.com/bingbot.htm" BotIndex="10")
+DbBotInfoCreate(BotId="13" BotName="BOT_YANDEX_METRICA" BotIdentKey="YandexMetrika/2.0; +http://yandex.com/bots" BotIndex="11")
+DbBotInfoCreate(BotId="14" BotName="BOT_YANDEX_FAVICON" BotIdentKey="YandexFavicons/1.0; +http://yandex.com/bots" BotIndex="12")
+DbBotInfoCreate(BotId="15" BotName="BOT_YANDEX_DIRECT1" BotIdentKey="YaDirectFetcher/1.0; Dyatel; +http://yandex.com/bots" BotIndex="13")
+DbBotInfoCreate(BotId="16" BotName="BOT_YANDEX_DIRECT2" BotIdentKey="YaDirectFetcher/1.0; +http://yandex.com/bots" BotIndex="13")
+DbBotInfoCreate(BotId="17" BotName="BOT_YANDEX_DIRECT3" BotIdentKey="YandexDirect/3.0; +http://yandex.com/bots" BotIndex="13")
+DbBotInfoCreate(BotId="18" BotName="BOT_STATDOM"        BotIdentKey="statdom.ru/Bot; +http://statdom.ru/bot.html" BotIndex="14")
+DbBotInfoCreate(BotId="19" BotName="BOT_ITRACKRU"       BotIdentKey="itrack.ru/research/cmsrate; rating@itrack.ru" BotIndex="15")
+DbBotInfoCreate(BotId="20" BotName="BOT_LINKPAD"        BotIdentKey="LinkpadBot/1.06; +http://www.linkpad.ru" BotIndex="16")
+DbBotInfoCreate(BotId="21" BotName="BOT_YANDEX_IMAGES"  BotIdentKey="YandexImages/3.0; +http://yandex.com/bots" BotIndex="17")
+DbBotInfoCreate(BotId="22" BotName="BOT_DOTBOT"         BotIdentKey="DotBot/1.1; http://www.opensiteexplorer.org/dotbot" BotIndex="18")
+DbBotInfoCreate(BotId="23" BotName="BOT_PRCY"           BotIdentKey="pr-cy.ru Screenshot Bot" BotIndex="19")
+DbBotInfoCreate(BotId="24" BotName="BOT_GOOGLE2"        BotIdentKey="AntiVirusPro/2.1; +http://www.google.com/bot.html" BotIndex="1")

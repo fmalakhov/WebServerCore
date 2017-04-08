@@ -1,0 +1,368 @@
+###############################################################################
+#Copyright (c) 2012-2017 MFBS, Fedor Malakhov
+#
+#Permission is hereby granted, free of charge, to any person obtaining a copy
+#of this software and associated documentation files (the "Software"), to deal
+#in the Software without restriction, including without limitation the rights
+#to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+#copies of the Software, and to permit persons to whom the Software is
+#furnished to do so, subject to the following conditions:
+#
+#The above copyright notice and this permission notice shall be included in all
+#copies or substantial portions of the Software.
+#
+#THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+#IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+#FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+#AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+#LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+#OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+#SOFTWARE.
+###############################################################################
+2 Sample demonstration of WEB server
+3 demonstration, server
+5 Information 
+6 Home 
+7 Base hosts
+8 Sync. bases
+9 Authorization 
+10 User 
+11 Password 
+12 Remember 
+13 Log 
+14 Forgot your password? 
+15 Not a member? 
+16 Register 
+17 Analysis of the logs 
+18 Version of installed on host client application.
+19 Version
+20 Sent key
+21 Who is online? 
+22 Now on the site are: 
+24 Today  
+25 Key delivery is not possible for enter user.
+28 Last  
+29 User 
+31 Contacts 
+32 Links 
+33 Public Show
+Section 34 requested items not found on the server 
+35 Timeframe: 
+36 View 
+37 Sort by: 
+38 Select 
+39 Name 
+43 Ascending 
+44 Descending 
+45 Send 
+46 Go to the first page 
+47 Go to previous page 
+48 Go to next page 
+49 Go to the last page 
+50 More
+51 Show 
+52 results 
+53 Number of 
+54 File name for uplad did not selected! Please select it before upload start.
+55 Executed 
+56 Encode
+57 Click to enlarge 
+58 Failed to query page 
+59 Session
+60 Session timeout is expired. Please, login to the system again.
+61 Description 
+62 About server 
+63 At least one field of form should be filled or selected for logs request execution.
+64 Processing
+65 Log message type:
+70 Update
+71 External mail client
+72 Avail.
+73 UFMI mobile device:
+74 Back 
+75 Contact information for this site
+76 Site Administrator 
+77 Please enter your real name (the name that appears on the site). 
+78 Please enter your user name (login). 
+79 Please enter a valid user name :. Should contain only the characters 0-9, az, AZ and have a length of at least 2 characters. 
+80 Please enter a valid e-mail. 
+81 Please enter the correct password. The password must not contain spaces, its length must be at least 6 characters and must contain only numbers (0-9) and the Latin characters (az, AZ) 
+82 Please check your password. 
+83 Password and confirmation do not match. Please try again. 
+84 Please check valid Password :. The name can not contain spaces, symbols 0-9, az, AZ, and have a minimum length of 6 characters. 
+85 All fields marked with an asterisk (*) are required! 
+86 Real Name: * 
+87 Username: * 
+88 Password: * 
+89 Confirm password: * 
+90 User's authentification is failed to $SETSYSNAME; tool. 
+91 Exit 
+92 The site has registered another user. Please re-register again. 
+93. address 
+94 Search 
+95 Results 
+96 View larger map 
+97 About $SETSYSNAME; tool 
+99 Have an account? Please log in 
+100 Username
+101 Password
+102 Save
+103 For the first time in our $SETSYSNAME; server? Please enter your details
+104 Please enter a valid e-mail.
+105 Please check first with our terms of service.
+106 Please check that the form is filled out completely and correctly.
+107 Contact Information Users
+108 Company
+109 Title
+110 no
+111 Mr.
+112 Ms.
+113 Doctor
+114 Professor
+115 Name
+116 Surname
+117 Middle
+118 Address (street, house, apartment)
+119 Address (district)
+120 City
+121 Index
+122 Country
+123 Russian Federation
+124 Mobile Phone
+125 Terms of Service
+126 I agree with these terms and conditions 
+127 Required 
+128 Telephone 
+129 Fax 
+130 My Contacts 
+131 My Booking 
+132 Change contact information 
+133 Phone 
+134 Status 
+135 number 
+136 Use a proxy server
+137 Date
+138 Proxy server address 
+139 Waiting for processing 
+140 Proxy server port
+142 Completed 
+143 Logs download
+144 There is no logs in CSV format for download in user's directory
+145 LFN
+146 Log file number in list.
+147 Name
+148 Administrator 
+149 Change 
+150 Wrong capcha code was enter.
+151 Capcha field was not fill. Please fill it from capcha image.
+152 SMS notification
+153 Mail notification
+154 Operation 
+157 Save
+158 Name of exported log file. 
+159 Size
+160 Restart database 
+161 Log file size in bytes
+162 Action
+163 Start of user's CSV log file download to user.
+164 Download
+172 $SETSYSNAME; server
+173 Users 
+174 No registered users. 
+175 User 
+176 Dear 
+177 Date from:
+178 Date to:
+181 Welcome 
+182 Client identifier
+183 Type:
+184 Index:
+188 If you have any questions, please contact us. 
+189 See you again! 
+190 Regards 
+191 Please do not reply to this email, so it has been automatically sent to you. 
+192 Configuration 
+193 Access to the e-mail server 
+194 SMTP server name 
+195 SMTP server port 
+196 SMTP timeout (in seconds.) 
+197 Interval of sending e-mail (s). 
+198 E-mail server 
+199 Login 
+200 Password
+201 Please enter your user name and address of the e-mail, then click "Send Password". 
+202 Soon after, the specified e-mail address You will receive an email with a new password. Use this new password to access the site. 
+203 Your e-mail 
+204 Send password 
+205 According to the data entered could not find a record of the user. 
+206 Your account has been found and to the specified e-mail address the message was sent with the authorization information. 
+207 Authorization 
+208 your personal password: 
+209 Search account 
+210 Please fill in red font fields. 
+224 Lab engineer 
+225 Manager 
+226 Type 
+227 Administrator 
+230 Address of the client 
+231 Restarting the personal configuration  
+232 Status
+233 Statistics 
+234 Title 
+235 Meaning 
+236 The number of simultaneous techniques 
+237 The number of simultaneous transmissions 
+238 The number of open sessions odnovoremenno 
+239 The number of user connections 
+240 The number of letters delivered 
+241 The number of undelivered messages 
+242 The number of HTML pages sent 
+243 Number of sent data files 
+245 LED visibility of the goods for the buyer 
+246 Manager logs 
+247 Average time generating HTML pages (ms.) 
+248 Maximum generate HTML pages (ms.) 
+249 active session 
+250 Code session
+251 IP address 
+252 Duration 
+253 Anonymous
+260 Registered
+261 Last visit
+264 Changing the Administrator Password 
+265 Administrator Password has been successfully changed 
+266 Administrator Password 
+267 Clone 
+322 Hide 
+323 Show
+324 Server location (room)
+325 Not assigned
+328 New user 
+329 Dear user! 
+330 you have registered 
+331 Now you can use system after permissions grant as a registered user  
+332 To do this, use: 
+333 Your login: 
+334 Your password: 
+335 Questions relating to the sample system, as well as suggestions and desires regarding the $SETSYSNAME; system can be sent to the following address: 
+336 Average time receiving HTML request (ms.) 
+337 Maximum receiving HTML request (ms.)
+345 Host index
+346 Transition time
+347 CPU usage
+348 Memory usage
+349 Hide IP info.
+350 The SMS with one-time confirmation key was successfully sent to you mobie phone.
+355 Cancel 
+356 Percent (One PPD)
+357 General Configuration 
+358 Max. the number of active sessions 
+359 Max. number of sessions from a single IP
+360 Compression of HTML pages 
+361 Min. size page. Compr for. (byte) 
+362 Keep-Alive session 
+363 Keep-Alive timeout 
+364 $SETSYSNAME; server shutdown
+365 The process of $SETSYSNAME; servwer shutdown was successfully run. 
+366 button to request removal of a user from list of registered users. 
+367 Stopping the WEB server 
+368 Launched for stopping the server 
+369 Host's group
+370 Common
+371 Group base
+372 There is no records in group base.
+373 Index
+374 Group name
+375 Group edit
+376 Group delete
+377 New group
+378 Change hosts access group.
+379 Group hosts user's access edit
+380 User:&nbsp;
+381 Group
+382 Confirmation code
+383 Attention!<br>System is running in demonstration mode.<br>All system bases change operations are not processed.
+434 Number of Connections BOT-s 
+453 Session 
+454 Confirmation key
+455 Confirmation code that was enter does not equal with single-time confirmation code that was sent to user mail address.
+457 modified 
+458 shows the number of hits and 
+459 visitors for 24 hours 
+460 Rating
+461 Left
+462 chars
+469 A support group Tula 
+470 load changes files on the server 
+475 Base zapereschennyh IP addresses 
+476 No issues with bad IP addresses in the database 
+477 IP address  
+478 access attempts 
+479 Editing banned IP addresses 
+480 This IP address is already in the database. 
+481 Prohibit IP 
+482 Add new IP address 
+483 Delete IP address 
+504 Back to the previous level 
+505 Information about the $SETSYSNAME; system
+507 Postcode 
+508 Name of Tula 
+509 Name of the site 
+510 State / Province / Region
+511 City 
+512 Address Support 
+513 Regular phone 
+514 Main. mobile phone 
+515 Extras. mobile phone 
+516 Fax Number 
+520 Map (Latitude) 
+521 On the map (Longitude) 
+522 phone number 
+524 is important for us to know your opinion! 
+527 General 
+528 Mail 
+529 Toole 
+530 Banners 
+531 Management banners 
+532 Add new banner 
+533 No banners 
+534 Regulations 
+535 Title 
+536 Hidden area in the early 
+537 The lower part Pages 
+538 The right column of the page 
+539 Editing banner 
+540 Saving banner 
+541 Body banner 
+542 Removing banner 
+543 Placing a banner on the page 
+544 Status of the banner / counter on the page. 
+545 Show 
+546 Raised+ 
+547 Raised+ 
+548 alarm
+549 alarms 
+550 SMS
+551 management of SMS sending 
+552 Add new phone 
+553 SMS server name 
+554 SMS server port 
+555 SMS timeout (in seconds.) 
+556 No numbers for SMS sending. 
+557 The use of Russian language in the transmission of SMS messages. 
+558 Russian to SMS 
+559 Editing the phone for SMS sending 
+560 Phone number 
+561 Storing a number 
+562 Flags of the Russian language to be used in SMS messages sent. If this flag is not set, messages send in English. 
+563 Deleting a number 
+564 Access Identifier 
+565 Posted by 
+566 Russian language 
+567 The number of delivered SMS 
+568 The number of undelivered SMS 
+569 User name filed should not be empty. Plase fill valid user's name.
+570 User password filed should not be empty. Plase fill valid user's password.
+571 The confirmation key field is empty, please enter confirmation code from mail or SMS.
+572 User name filed should have at least two chars. Plase fill valid user's name.
+573 User password filed should have at least six chars. Plase fill valid user's password.

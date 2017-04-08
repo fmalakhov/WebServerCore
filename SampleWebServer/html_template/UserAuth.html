@@ -1,0 +1,248 @@
+###############################################################################
+#Copyright (c) 2012-2017 MFBS, Fedor Malakhov
+#
+#Permission is hereby granted, free of charge, to any person obtaining a copy
+#of this software and associated documentation files (the "Software"), to deal
+#in the Software without restriction, including without limitation the rights
+#to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+#copies of the Software, and to permit persons to whom the Software is
+#furnished to do so, subject to the following conditions:
+#
+#The above copyright notice and this permission notice shall be included in all
+#copies or substantial portions of the Software.
+#
+#THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+#IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+#FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+#AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+#LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+#OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+#SOFTWARE.
+###############################################################################
+<script type="text/javascript">
+
+void ConfKeyDelayTmrID;
+
+function OnAuthKeyDelivery()
+{
+    SetVisibleCenterBlock(document.getElementById('key_confirm_div'));
+}
+
+function OnReadConfKeyNotify()
+{
+    document.getElementById('key_confirm_div').style.display='none';
+    if (KeyDeliveryConfirm > 0)
+    {	
+	    document.getElementById('auth_exec_zone_id').style.display='block';
+	    if (typeof(DemoConfirmKey) != 'undefined')
+	    {
+	        document.UserAuth.confirm_key.value = DemoConfirmKey;
+	    }
+	}
+	else
+	{
+	    document.getElementById('confirm_key_req_bt_id').disabled = false;
+		document.getElementById('confirm_key_req_bt_id').style.display = 'block';
+	}
+}
+
+function NamePasswordFiledsCheck()
+{
+	var AuthForm = document.UserAuth;
+	if (AuthForm.username.value == "")
+	{
+	   alert( "$SETBASETEXTBYID(569);" );
+	   return false;
+	}
+	else
+	{
+	    if (AuthForm.password.value == "")
+		{
+			alert( "$SETBASETEXTBYID(570);" );
+			return false;
+		}
+		else
+		{
+		    if (AuthForm.username.value.length < 2)
+			{
+		        alert( "$SETBASETEXTBYID(572);" );
+		        return false;			
+			}
+		    if (AuthForm.password.value.length < 6)
+		    {
+		        alert( "$SETBASETEXTBYID(573);" );
+		        return false;		   
+		    }
+		}
+	}
+	return true;
+}
+
+function AuthKeySentReq()
+{
+	if (NamePasswordFiledsCheck() == false) return;
+	document.getElementById('confirm_key_req_bt_id').disabled = true;	
+	document.getElementById('user_auth_show_id').style.display='block';
+    $.ajax({
+	url: "ServEcpDataReq.htr",
+	type: "POST",
+	data: {"session_id": AuthSessionId,
+	       "secure_key": AuthSecKey},
+	cache: false,
+        success: function(html){  
+            $("#srp_data_id").html(html);
+			AuthKeyEncodeReq();
+        },
+		error: function(XHR){
+			document.getElementById('confirm_key_req_bt_id').disabled = false;
+			document.getElementById('user_auth_show_id').style.display = 'none';
+            alert("Server processing data error: "+XHR.status+ "  " + XHR.statusText);
+	    }			
+    });
+}
+
+function OnConfKeyReqDelay()
+{
+    var bt = document.getElementById('confirm_key_req_bt_id');
+    bt.style.display = 'block';
+    bt.disabled = false;
+	clearInterval(ConfKeyDelayTmrID);
+}
+
+function AuthKeyEncodeReq()
+{
+	var uapd = "";
+    var form = document.UserAuth;	
+	if (InfoPrcRes == 0)
+	{
+	    document.getElementById('confirm_key_req_bt_id').disabled = false;
+		document.getElementById('user_auth_show_id').style.display = 'none';
+        alert("Processing information access is closed.");	
+	    return;
+	}
+	uapd = UserAuthEncode(form.username.value, form.password.value);
+    $.ajax({
+	url: "AuthConfKeyReq.htr",
+	type: "POST",
+	data: {"session_id": AuthSessionId,
+	       "secure_key": AuthSecKey,
+		   "usr_auth":   uapd},
+	cache: false,
+        success: function(html){  
+            $("#key_auth_block_id").html(html);
+			document.getElementById('confirm_key_req_bt_id').disabled = true;
+			document.getElementById('confirm_key_req_bt_id').style.display = 'none';
+			document.getElementById('user_auth_show_id').style.display = 'none';
+			ConfKeyDelayTmrID = setInterval("OnConfKeyReqDelay();", 65000);
+            OnAuthKeyDelivery();
+        },
+		error: function(XHR){
+		    document.getElementById('confirm_key_req_bt_id').disabled = false;
+			document.getElementById('user_auth_show_id').style.display = 'none';
+            alert("Confirmation key request error: "+XHR.status+ "  " + XHR.statusText);
+	    }			
+    });
+	document.getElementById('srp_data_id').innerHTML = '';	
+}
+
+function AuthStartSentReq()
+{
+    if (NamePasswordFiledsCheck() == false) return;	
+	document.getElementById('user_auth_show_id').style.display='block';
+    $.ajax({
+	url: "ServEcpDataReq.htr",
+	type: "POST",
+	data: {"session_id": AuthSessionId,
+	       "secure_key": AuthSecKey},
+	cache: false,
+        success: function(html){  
+            $("#srp_data_id").html(html);
+			UserRegisterReq();
+        },
+		error: function(XHR){
+			document.getElementById('confirm_key_req_bt_id').disabled = false;
+			document.getElementById('user_auth_show_id').style.display='none';
+            alert("Server processing data error: "+XHR.status+ "  " + XHR.statusText);
+	    }			
+    });
+}
+
+function UserRegisterReq()
+{
+    var uapd = "";
+	var AuthForm = document.UserAuth;	
+    var RegisterForm = document.UserRegister;	
+    document.getElementById('user_auth_show_id').style.display='none';	
+	if (InfoPrcRes == 0)
+	{
+        alert("Processing information access is closed.");	
+	    return;
+	}	
+	if (AuthForm.confirm_key.value != "")
+	{
+	    uapd = UserAuthEncode(AuthForm.username.value, AuthForm.password.value);
+        document.getElementById('auth_exec_zone_id').style.display = 'none';		
+		RegisterForm.confirm_key.value = AuthForm.confirm_key.value;
+		RegisterForm.usr_auth.value = uapd;
+		RegisterForm.submit();
+ 	}
+	else
+	{
+	    alert( "$SETBASETEXTBYID(571);" );
+	}
+	document.getElementById('srp_data_id').innerHTML = '';
+}
+
+function AuthNoKeyStartSentReq()
+{
+    if (NamePasswordFiledsCheck() == false) return;	
+	document.getElementById('user_auth_show_id').style.display='block';	
+    $.ajax({
+	url: "ServEcpDataReq.htr",
+	type: "POST",
+	data: {"session_id": AuthSessionId,
+	       "secure_key": AuthSecKey},
+	cache: false,
+        success: function(html){  
+            $("#srp_data_id").html(html);
+			UserRegisterNoKeyReq();
+        },
+		error: function(XHR){
+			document.getElementById('user_auth_show_id').style.display = 'none';
+            alert("Server processing data error: "+XHR.status+ "  " + XHR.statusText);
+	    }			
+    });
+}
+
+function UserRegisterNoKeyReq()
+{
+	var uapd = "";
+    var AuthForm = document.UserAuth;
+	var RegisterForm = document.UserRegister;
+	document.getElementById('user_auth_show_id').style.display = 'none';	
+	if (InfoPrcRes == 0)
+	{
+        alert("Processing information access is closed.");	
+	    return;
+	}	
+	uapd = UserAuthEncode(AuthForm.username.value, AuthForm.password.value);
+	RegisterForm.confirm_key.value = "";
+	RegisterForm.usr_auth.value = uapd;
+	RegisterForm.submit();
+	document.getElementById('srp_data_id').innerHTML = '';
+}
+
+function OnSubmitEnter(e)
+{
+    if (e.keyCode == 13)
+	    AuthNoKeyStartSentReq();
+}
+
+function UserAuthKeyInit()
+{
+    document.getElementById('confirm_key_req_bt_id').disabled = false;
+    document.getElementById('auth_exec_zone_id').style.display = 'none';
+	document.getElementById('user_auth_show_id').style.display = 'none';
+}
+
+</script>
