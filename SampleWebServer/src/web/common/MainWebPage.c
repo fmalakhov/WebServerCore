@@ -546,10 +546,13 @@ void SetMenuWebPage(char *BufAnsw, USER_SESSION *SessionPtr)
 			case UAT_ADMIN:
 		        /* My contacts - user's menu item */
                 if ((ParReadHttpSocketPtr->WebChanId == PRIMARY_WEB_CHAN) || ParWebServPtr->ServCustomCfg.SecondPortInfoEdit)
-			        AddSecMainMenuItem(GenPageMyContacts, SITE_RUS_MY_CONTACTS_LINE_ID, SessionPtr, 51);
+			        AddSecMainMenuItem(GenPageMyContacts, SITE_RUS_MY_CONTACTS_LINE_ID, SessionPtr, 20);
 
+		        /* Sample overview request - user's menu item */
+			    AddSecMainMenuItem(GenPageSampleOverview, SITE_RUS_DEMO_OVERVIEW_LINE_ID, SessionPtr, 21);
+				
 		        /* Group base request - user's menu item */
-			    AddSecMainMenuItem(GenPageGroupDBManage, SITE_RUS_GROUP_BASE_LINE_ID, SessionPtr, 65);
+			    AddSecMainMenuItem(GenPageGroupDBManage, SITE_RUS_GROUP_BASE_LINE_ID, SessionPtr, 105);
 
 		        /* Bad IPs's database - admin's menu item */
 			    AddSecMainMenuItem(GenPageBadIpDBManage, SITE_RUS_BAD_IP_MENU_LINE_ID, SessionPtr, 106);
@@ -573,7 +576,10 @@ void SetMenuWebPage(char *BufAnsw, USER_SESSION *SessionPtr)
             default:
 		        /* My contacts - user's menu item */
                 if ((ParReadHttpSocketPtr->WebChanId == PRIMARY_WEB_CHAN) || ParWebServPtr->ServCustomCfg.SecondPortInfoEdit)
-			         AddSecMainMenuItem(GenPageMyContacts, SITE_RUS_MY_CONTACTS_LINE_ID, SessionPtr, 51);
+			         AddSecMainMenuItem(GenPageMyContacts, SITE_RUS_MY_CONTACTS_LINE_ID, SessionPtr, 20);
+				 
+		        /* Sample overview request - user's menu item */
+			    AddSecMainMenuItem(GenPageSampleOverview, SITE_RUS_DEMO_OVERVIEW_LINE_ID, SessionPtr, 21);
 		}
 		AddStrWebPage("</div></div>\r\n");
 	}

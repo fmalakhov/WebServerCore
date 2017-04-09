@@ -332,6 +332,7 @@ SOFTWARE.
 #define SITE_RUS_SMS_RUS_LINE_ID                566
 
 /*********** User's Text IDs should be started from ID: 600 ********/
+#define SITE_RUS_DEMO_OVERVIEW_LINE_ID			600
 
 //---------------------------------------------------------------------------
 #endif  /* if ! defined( TextLineCodeH ) */

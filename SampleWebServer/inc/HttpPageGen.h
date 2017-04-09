@@ -62,5 +62,9 @@ void GroupDataBase(char *BufAnsw, USER_SESSION *SessionPtr, char *HttpCmd);
 void ChgViewGroupDataBase(char *BufAnsw, USER_SESSION *SessionPtr, char *HttpCmd);
 void ChgUserHostAccessGrpWebPage(char *BufAnsw, USER_SESSION *SessionPtr, char *HttpCmd);
 void ChgUserGroupSetWebPage(char *BufAnsw, USER_SESSION *SessionPtr, char *HttpCmd);
+
+/* User's define page handler function prototypes */
+void ShowOverviewShopWebPage(char *BufAnsw, USER_SESSION *SessionPtr, char *HttpCmd);
+
 //---------------------------------------------------------------------------
 #endif  /* if ! defined( HttpPageGensH ) */

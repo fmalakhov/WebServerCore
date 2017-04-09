@@ -170,7 +170,8 @@ GenPageMain,                MainPageSetShopWebPage,
 GenPageAboutServer,         ShowServerInfoShopWebPage,
 GenPageMyContacts,          UserContactManage,
 GenPageContacts,            ShowContactsShopWebPage,
-GenPageUserContactInfoSet,  UserContactSet
+GenPageUserContactInfoSet,  UserContactSet,
+GenPageSampleOverview,		ShowOverviewShopWebPage
 };
 
 DEF_HTML_HANDLER HttpAdmGetReqList[] = {
@@ -192,7 +193,8 @@ GenPageChgUserType,         ChgUserTypeShopWebPage,
 GenPageDynConfKeyReq,       HandleDynConfKeyReq,
 GenPageGroupDBManage,       GroupDataBase,    /* GET & POST */
 GenPageCghGroupDbManage,    ChgViewGroupDataBase,
-GenPageChgGrpUser,          ChgUserHostAccessGrpWebPage
+GenPageChgGrpUser,          ChgUserHostAccessGrpWebPage,
+GenPageSampleOverview,		ShowOverviewShopWebPage
 };
 
 DEF_HTML_HANDLER HttpStatusShowGetReqList[] = {

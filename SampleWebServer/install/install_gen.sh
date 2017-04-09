@@ -89,8 +89,10 @@ chmod 444 CapchaImage/*
 chmod 664 database/*
 chmod 444 html_template/*
 cd WebData
+chmod 755 html_data
 chmod 755 images
 chmod 755 scripts
+chmod 444 html_data/*
 chmod 444 images/*
 chmod 444 scripts/*
 chmod 444 robots.txt
@@ -100,6 +102,9 @@ cd $SERVER_VOB/install
 tar -cvf sample_$TARGET_PLATFORM.tar sample > /dev/null
 gzip sample_$TARGET_PLATFORM.tar > /dev/null
 rm -rf sample
+cd $SERVER_VOB
+rm SampleWebServer_$TARGET_PLATFORM
+cd install
 
 echo "Installation package preparation is done"
 

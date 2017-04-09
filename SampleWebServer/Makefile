@@ -56,6 +56,7 @@ $(SERVER_SRC)web/common/UserRegisterHttpPage.c \
 $(SERVER_SRC)web/common/CapchaRequest.c \
 $(SERVER_SRC)web/system/GroupWebDataBase.c \
 $(SERVER_SRC)web/system/MainSystemShowWebPage.c \
+$(SERVER_SRC)web/system/SampleOverviewHttpPage.c \
 $(SERVER_SRC)database/SampleCustomConfigDataBase.c \
 $(SERVER_SRC)WebServer.c \
 $(SERVER_SRC)SiteMapFileGen.c \

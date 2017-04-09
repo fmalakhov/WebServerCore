@@ -1,0 +1,7 @@
+*.o
+SampleWebServer/SampleWebServer*
+SampleWebServer/WebData/sitemap.xml
+SampleWebServer/LogFiles/*
+SampleWebServer/install/*.tar.gz
+ServSysLib/ServSysLib_*
+

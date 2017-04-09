@@ -34,23 +34,20 @@ char GenPageUserContactInfoSet[] = "UserContactInfoSet.html";
 char GenPageRegClientsList[] = "RegClientsList.html";
 char GenPageServerConfig[] = "ServerConfig.html";
 char GenPagePasswdSentMail[] = "PasswdSentMail.html";
-char GenPageDeliveryInfo[] = "DeliveryInfo.html";
-char GenPagePaymentInfo[] = "PaymentInfo.html";
 char GenPageServStats[] = "ServerStats.html";
-char GenPageLogMgr[] = "ServLogManager.html";
 char GenPageActSessList[] = "ActiveSessionsList.html";
 char GenPageAdmPswdChg[] = "AdminPasswordChange.html";
 char GenPageDelUser[] = "DelUserRegister.html";
 char GenPageChgUserType[] = "ChgUserRegType.html";
-char GenPageShowExportLogList[] = "ShowExportLogList.html";
-char GenPageDynNumActUsersReq[] = "NumActiveUsersReq.htr";
-
 char GenPageCghGroupDbManage[] = "ChgViewGrpDBMgt.html";
 char GenPageGroupDBManage[] = "GroupDBManage.html";
 char GenPageChgGrpUser[] = "ChgHostActGropUser.html";
 char GenPageChgGrpSet[] = "ChgHostActGropSet.html";
 char GenPageDynEncodeDataReq[] = "ServEcpDataReq.htr";
 char GenPageDynAuthConfKeyReq[] = "AuthConfKeyReq.htr";
+
+/* User's defined HTML page names */
+char GenPageSampleOverview[] = "SampleOverview.html";
 
 char NoHostInfo[] = "<script language=\"javascript\" type=\"text/javascript\">var HostInfoData=[];</script>\r\n";
 
