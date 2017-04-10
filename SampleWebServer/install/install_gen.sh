@@ -81,6 +81,7 @@ cp -r $SERVER_VOB/CapchaImage .
 cp -r $SERVER_VOB/html_template .
 cp -r $SERVER_VOB/database .
 cp -r $SERVER_VOB/WebData .
+cp -r $SERVER_VOB/ssl .
 cp $SERVER_VOB/SampleWebServer_$TARGET_PLATFORM .
 cp $SERVER_VOB/SampleWebServer.cfg .
 chmod 664 SampleWebServer.cfg
@@ -88,6 +89,7 @@ chmod 755 SampleWebServer_$TARGET_PLATFORM
 chmod 444 CapchaImage/*
 chmod 664 database/*
 chmod 444 html_template/*
+chmod 444 ssl/*
 cd WebData
 chmod 755 html_data
 chmod 755 images
