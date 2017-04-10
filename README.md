@@ -31,6 +31,10 @@ For installation WEB server bundle create you should:
 	SecondLocalIPAddrServ = "<IP address of secondary WEB access channel>"
 7. Run server: "sudo ./Sample..._x86_64"
 
+In sample conviguration two channels WEB server will be running. Prinary channel is configured to port number 8000,
+secondary channel is configured to port number 9000. Primary channel is supports access to content via HTTPS.
+Secondary channel is supports access to content via HTTP.
+
 There are 3 users already registered:
 Server's administrator: login: admin  password: password
 User Ivan:              login: ivan   password: ivan2017

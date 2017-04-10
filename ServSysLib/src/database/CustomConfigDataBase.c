@@ -334,12 +334,6 @@ void CustomConfigInit(WEB_SERVER_CUST_CFG_INFO *CustCfgInfoPtr)
 	strcpy(CustCfgPtr->ImgBgHeaderM320, "images/Header_320_0704201701.png");
 	strcpy(CustCfgPtr->ImgBgHeaderM360, "images/Header_360_0704201701.png");
 	strcpy(CustCfgPtr->ImgBgHeaderM400, "images/Header_400_0704201701.png");
-/*
-	strcpy(CustCfgPtr->ImgBgHeaderDesc, "images/Header_desc_0407201601.jpg");
-	strcpy(CustCfgPtr->ImgBgHeaderM320, "images/Header_320_0926201401.jpg");
-	strcpy(CustCfgPtr->ImgBgHeaderM360, "images/Header_360_0926201401.jpg");
-	strcpy(CustCfgPtr->ImgBgHeaderM400, "images/Header_400_0926201401.jpg");
-*/
 	strcpy(CustCfgPtr->ImgShopView, "images/spb_view.jpg");
 
     /* Server ports */

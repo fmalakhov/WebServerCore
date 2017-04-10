@@ -19,16 +19,20 @@
 #OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 #SOFTWARE.
 ###############################################################################
-#SysShowHostIPAddr     = "<IP address>"
+#SysShowHostIPAddr    = "<IP address>"
 SetUserMobPhoneField  = "1"
 AnonymTimoutExpInfo   = "1"
 SudoSet               = "1"
 SecWebPort            = "1"
+PrimPortDdosProtect   = "1"
+PrimPortHttpSecure    = "1"
+PrimPortSertFile      = "./ssl/sample.crt"
+PrimPortKeyFile       = "./ssl/sample.key"
 PrimWebAccIPPort      = "8000"
 PrimExtServIPPort     = "8000"
-#PrimLocalHostName     = "192.168.1.14"
 PrimLocalIPAddrServ   = "192.168.1.14"
+#PrimLocalHostName    = "<URL of primary WEB access channel>"
 SecondWebAccIPPort    = "9000"
 SecondExtServIPPort   = "9000"
 SecondLocalIPAddrServ = "192.168.1.14"
-#SecondLocalHostName   = "192.168.1.14"
+#SecondLocalHostName  = "<URL of secondary WEB access channel>"
