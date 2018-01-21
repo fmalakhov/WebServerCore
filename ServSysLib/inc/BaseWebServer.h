@@ -190,7 +190,8 @@ typedef struct {
 	ListItsTask     BannerList;
 	ListItsTask     LogTypeList;
     ListItsTask     ClientTypeList;
-    ListItsTask     PlatformList;	
+    ListItsTask     PlatformList;
+	ListItsTask     SchemaList;
 	unsigned int	Count_ID;
 	unsigned int    SummHtmlPageGenTime; /* Summary time in ms for all HTML pages generation */
 	unsigned int    HtmlPageGenCount;    /* Numbr of generated HTML pages */

@@ -39,7 +39,7 @@ sem_t  gFileMutex;
 static char DrdInfoFile[]  = "serv_info.log";
 static char BrdCheckCmd[]  = "dmidecode";
 static char BrdCheckPars[] = "system";
-static char LibVersionInfo[] = "\nServer System Library version: 4.0.1 08.04.2017\nCopyright (c) 2012-2017 MFBS.\nThis product includes software developed by MFBS\n\n";
+static char LibVersionInfo[] = "\nServer System Library version: 4.0.2 11.22.2017\nCopyright (c) 2012-2017 MFBS.\nThis product includes software developed by MFBS\n\n";
 
 unsigned char AsciiCharToHexOctet[] = {
  0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80,

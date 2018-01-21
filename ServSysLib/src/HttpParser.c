@@ -90,7 +90,7 @@ static FIELD_EXTRACT_INFO MonthNameInfo[] = {
 	{8,  "Aug", 3},
 	{9,  "Sep", 3},
 	{10, "Oct", 3},
-	{11, "Nov", 3},
+	{11, "Now", 3},
 	{12, "Dec", 3}
 };
 

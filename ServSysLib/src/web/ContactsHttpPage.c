@@ -236,7 +236,9 @@ void ShowContactsShopWebPage(char *BufAnsw, USER_SESSION *SessionPtr, char *Http
     AddStrWebPage("<tr><td colspan=\"2\" align=\"center\">\r\n");
     if (ParReadHttpSocketPtr->DeviceType == SDT_MOBILE)
 	{
-		AddStrWebPage("<img alt=\"Shop\" title=\"\" src=\"images/shop.jpg\" width=\"240\" height=\"240\" border=\"5\" >\r\n");
+		AddStrWebPage("<img alt=\"Shop\" title=\"\" src=\"");
+		AddStrWebPage(ParWebServPtr->ServCustomCfg.ImgShopView);
+		AddStrWebPage("\" width=\"240\" height=\"240\" border=\"5\" >\r\n");
 	    SetGoogleMapLocation();
 		AddStrWebPage("</td></tr><tr><td colspan=\"2\" align=\"center\">\r\n");
 	}

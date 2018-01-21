@@ -94,8 +94,7 @@ static void StatAddHandle(unsigned char ClientType, unsigned int ClientId,
     DebugLogPrint(NULL, "Stats add: CT:%d, CI:%d, DI:%d, LT:%d\n", 
         ClientType, ClientId, DevId, StatsCode);
 #endif
-    if (StatsValue > 0) StatsRecPtr->StatsCount += StatsValue;
-    else                StatsRecPtr->StatsCount++;
+    StatsRecPtr->StatsCount += StatsValue;
     StatsRecPtr->UpdateCount = 1;
 }
 //---------------------------------------------------------------------------
